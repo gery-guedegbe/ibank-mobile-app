@@ -2,40 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  /* --- FONTS --- */
+  --font-poppins: "Poppins", sans-serif;
+
+  /* --- COLORS --- */
+  --color-neutral-1: #1a1a1a;
+  --color-neutral-2: #666666;
+  --color-neutral-3: #999999;
+  --color-primary-1: #3629b7;
+
+  /* --- TEXT SIZES --- */
+  --text-title-1: 24px;
+  --text-title-2: 20px;
+  --text-title-3: 18px;
+  --text-body-1: 16px;
+  --text-body-2: 14px;
+  --text-body-3: 12px;
+  --text-caption-1: 11px;
+  --text-caption-2: 10px;
+
+  /* --- SHADOWS --- */
+  --shadow-card: 0px 4px 30px rgba(54, 41, 183, 0.07);
+  --shadow-card-small: 0px -5px 30px rgba(54, 41, 183, 0.07);
+}
+
 @layer utilities {
   /* TITLES */
   .text-title-1 {
-    @apply text-title-1 font-poppins-semibold text-neutral-1 font-semibold;
+    @apply font-poppins-semibold text-title-1 font-semibold text-neutral-1;
   }
 
   .text-title-2 {
-    @apply text-title-2 font-poppins-semibold text-neutral-1 font-semibold;
+    @apply font-poppins-semibold text-title-2 font-semibold text-neutral-1;
   }
 
   .text-title-3 {
-    @apply text-title-3 font-poppins-semibold text-neutral-1 font-semibold;
+    @apply font-poppins-semibold text-title-3 font-semibold text-neutral-1;
   }
 
   /* BODY */
   .text-body-1 {
-    @apply text-body-1 font-poppins-medium text-neutral-1 font-medium;
+    @apply font-poppins-medium text-body-1 font-medium text-neutral-1;
   }
 
   .text-body-2 {
-    @apply text-body-2 font-poppins-regular font-regular text-neutral-2;
+    @apply font-regular font-poppins-regular text-body-2 text-neutral-2;
   }
 
   .text-body-3 {
-    @apply text-body-3 font-poppins-medium text-neutral-2 font-medium;
+    @apply font-poppins-medium text-body-3 font-medium text-neutral-2;
   }
 
   /* CAPTIONS */
   .text-caption-1 {
-    @apply text-caption-1 font-poppins-semibold text-neutral-3 font-semibold;
+    @apply font-poppins-semibold text-caption-1 font-semibold text-neutral-3;
   }
 
   .text-caption-2 {
-    @apply text-caption-2 font-poppins-medium text-neutral-3 font-medium;
+    @apply font-poppins-medium text-caption-2 font-medium text-neutral-3;
   }
 
   .shadow-card {

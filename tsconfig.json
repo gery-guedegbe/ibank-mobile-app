@@ -1,24 +1,49 @@
 {
   "extends": "expo/tsconfig.base",
-
   "compilerOptions": {
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "paths": {
-      "@/*": ["./*"],
-      "@app/*": ["./app/*"],
-      "@assets/*": ["./assets/*"],
-      "@config/*": ["./config/*"],
-      "@contexts/*": ["./contexts/*"],
-      "@constants/*": ["./constants/*"],
-      "@components/*": ["./components/*"],
-      "@services/*": ["./services/*"],
-      "@hooks/*": ["./hooks/*"],
-      "@utils/*": ["./utils/*"],
-      "@store/*": ["./store/*"],
-      "@styles/*": ["./styles/*"],
-      "@types/*": ["./types/*"]
+      "@/*": [
+        "./*"
+      ],
+      "@app/*": [
+        "./app/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@config/*": [
+        "./config/*"
+      ],
+      "@contexts/*": [
+        "./contexts/*"
+      ],
+      "@constants/*": [
+        "./constants/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@services/*": [
+        "./services/*"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ],
+      "@store/*": [
+        "./store/*"
+      ],
+      "@styles/*": [
+        "./styles/*"
+      ],
+      "@types/*": [
+        "./types/*"
+      ]
     }
   },
   "include": [
@@ -26,6 +51,7 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "**/*.d.ts"
+    "**/*.d.ts",
+    "nativewind-env.d.ts"
   ]
 }

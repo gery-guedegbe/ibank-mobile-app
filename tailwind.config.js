@@ -40,6 +40,8 @@ module.exports = {
           4: "#CACACA",
           5: "#E0E0E0",
           6: "#FFFFFF",
+          7: "#CBCBCB",
+          8: "#979797",
         },
         semantic: {
           1: "#FF4267",
@@ -48,6 +50,10 @@ module.exports = {
           4: "#52D5BA",
           5: "#FB6B18",
         },
+      },
+      boxShadow: {
+        card_1: "0px 4px 30px rgba(54, 41, 183, 0.07)",
+        card_2: "0 5px 30px 0 rgba(0, 0, 0, 0.05);",
       },
     },
   },

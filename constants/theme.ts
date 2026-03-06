@@ -1,3 +1,12 @@
+import arrow_left_black from "@assets/icons/arrow-left-black.png";
+import arrow_left from "@assets/icons/arrow-left.png";
+import eye_close_icon from "@assets/icons/eye-close-icon.png";
+import eye_open_icon from "@assets/icons/eye-open-icon.png";
+import eye_open from "@assets/icons/eye-open.png";
+import fingerprint_icon from "@assets/icons/fingerprint-icon.png";
+import sign_in_image from "@assets/images/auth/sign-in-image.png";
+import sign_up_image from "@assets/images/auth/sign-up-image.png";
+
 // GLOBALS COLORS
 export const COLORS = {
   primary: { 1: "#3629B7", 2: "#5655B9", 3: "#A8A3D7" },
@@ -8,6 +17,7 @@ export const COLORS = {
     4: "#CACACA",
     5: "#E0E0E0",
     6: "#FFFFFF",
+    7: "#CBCBCB",
   },
   semantic: {
     1: "#FF4267",
@@ -33,4 +43,15 @@ export const SHADOWS = {
     shadowRadius: 30,
     elevation: 8,
   },
+};
+
+export const images = {
+  arrow_left,
+  arrow_left_black,
+  sign_in_image,
+  sign_up_image,
+  eye_open_icon,
+  eye_open,
+  eye_close_icon,
+  fingerprint_icon,
 };
