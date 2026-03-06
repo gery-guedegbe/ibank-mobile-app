@@ -1,4 +1,4 @@
-import { PressableProps, ViewStyle } from "react-native";
+import { ImageSourcePropType, PressableProps, ViewStyle } from "react-native";
 
 export interface AppButtonProps extends PressableProps {
   title: string;
@@ -6,4 +6,10 @@ export interface AppButtonProps extends PressableProps {
   onPress?: () => void;
   loading?: boolean;
   children?: React.ReactNode;
+}
+
+export interface TabBarIconProps {
+  focused: boolean;
+  icon: ImageSourcePropType;
+  title: string;
 }

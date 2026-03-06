@@ -11,6 +11,7 @@ import { create } from "zustand";
 interface AuthState {
   user: User | null;
   token: string | null;
+  isAuthenticated: boolean;
   isLoading: boolean;
 
   login: (payload: LoginPayload) => Promise<void>;
@@ -22,6 +23,7 @@ interface AuthState {
 export const useAuthStore = create<AuthState>((set) => ({
   user: null,
   token: null,
+  isAuthenticated: false,
   isLoading: false,
 
   login: async (payload) => {
@@ -40,6 +42,7 @@ export const useAuthStore = create<AuthState>((set) => ({
           role: UserRole.USER,
         },
         token,
+        isAuthenticated: true,
         isLoading: false,
       });
     } catch (error) {
@@ -65,6 +68,7 @@ export const useAuthStore = create<AuthState>((set) => ({
           role: UserRole.USER,
         },
         token,
+        isAuthenticated: true,
         isLoading: false,
       });
     } catch (error) {
@@ -95,6 +99,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     set({
       user: null,
       token: null,
+      isAuthenticated: false,
     });
   },
 }));

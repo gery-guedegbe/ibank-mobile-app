@@ -4,6 +4,10 @@ import eye_close_icon from "@assets/icons/eye-close-icon.png";
 import eye_open_icon from "@assets/icons/eye-open-icon.png";
 import eye_open from "@assets/icons/eye-open.png";
 import fingerprint_icon from "@assets/icons/fingerprint-icon.png";
+import home_icon from "@assets/icons/home-icon.png";
+import message_icon from "@assets/icons/message-icon.png";
+import search_icon from "@assets/icons/search-icon.png";
+import setting_icon from "@assets/icons/setting-icon.png";
 import sign_in_image from "@assets/images/auth/sign-in-image.png";
 import sign_up_image from "@assets/images/auth/sign-up-image.png";
 
@@ -54,4 +58,8 @@ export const images = {
   eye_open,
   eye_close_icon,
   fingerprint_icon,
+  home_icon,
+  search_icon,
+  message_icon,
+  setting_icon,
 };

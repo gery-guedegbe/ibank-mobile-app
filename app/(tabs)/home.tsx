@@ -1,11 +1,14 @@
 import React from "react";
 import { Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const HomeScreen = () => {
   return (
-    <View>
-      <Text>HomeScreen</Text>
-    </View>
+    <SafeAreaView className="h-full flex-1 bg-white">
+      <View className="flex-1">
+        <Text>HomeScreen</Text>
+      </View>
+    </SafeAreaView>
   );
 };
 
