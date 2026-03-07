@@ -19,7 +19,8 @@ const LoginScreen = () => {
   const {
     control,
     handleSubmit,
-    formState: { errors },
+
+    formState: { errors, isSubmitting },
   } = useLoginForm();
 
   const { login } = useAuth();
@@ -132,6 +133,7 @@ const LoginScreen = () => {
             accessibilityLabel="Sign in to your account"
             title="Sign in"
             onPress={handleSubmit(onSubmit)}
+            loading={isSubmitting}
           />
 
           <View className="gap-2">
