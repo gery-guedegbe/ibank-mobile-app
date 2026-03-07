@@ -3,8 +3,7 @@ import { ImageSourcePropType } from "react-native";
 export interface User {
   id: string;
   email: string;
-  firstName?: string;
-  lastName?: string;
+  name: string | null;
   phone?: string;
   avatar?: string | ImageSourcePropType;
   token?: string;

@@ -62,7 +62,7 @@ const LoginScreen = () => {
           </Text>
         </View>
 
-        <View className="h-full gap-8 rounded-t-[30px] bg-white  p-6  shadow-xl">
+        <View className="h-full gap-8 rounded-t-[30px] bg-white p-6 shadow-xl">
           <View className="gap-2">
             <Text className="font-poppins-semibold text-[24px] font-semibold leading-7 text-primary-1">
               Welcome Back

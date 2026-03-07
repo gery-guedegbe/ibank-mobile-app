@@ -1,11 +1,6 @@
 import { authService } from "@/services/auth.service";
 import { secureStorage } from "@/services/secure-storage.service";
-import {
-  LoginPayload,
-  SignupPayload,
-  User,
-  UserRole,
-} from "@/types/user.types";
+import { LoginPayload, SignupPayload, User } from "@/types/user.types";
 import { create } from "zustand";
 
 interface AuthState {
@@ -35,12 +30,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       await secureStorage.saveToken(token);
 
       set({
-        user: {
-          id: user.uid,
-          email: user.email!,
-          emailVerified: user.emailVerified,
-          role: UserRole.USER,
-        },
+        user,
         token,
         isAuthenticated: true,
         isLoading: false,
@@ -61,12 +51,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       await secureStorage.saveToken(token);
 
       set({
-        user: {
-          id: user.uid,
-          email: user.email!,
-          emailVerified: user.emailVerified,
-          role: UserRole.USER,
-        },
+        user,
         token,
         isAuthenticated: true,
         isLoading: false,

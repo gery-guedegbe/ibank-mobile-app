@@ -1,15 +1,31 @@
+import account_icon from "@assets/icons/account-icon.png";
 import arrow_left_black from "@assets/icons/arrow-left-black.png";
 import arrow_left from "@assets/icons/arrow-left.png";
+import bell_icon from "@assets/icons/bell-icon.png";
+import beneficiary_icon from "@assets/icons/beneficiary-icon.png";
+import credit_card_icon from "@assets/icons/credit-card-icon.png";
 import eye_close_icon from "@assets/icons/eye-close-icon.png";
 import eye_open_icon from "@assets/icons/eye-open-icon.png";
 import eye_open from "@assets/icons/eye-open.png";
 import fingerprint_icon from "@assets/icons/fingerprint-icon.png";
 import home_icon from "@assets/icons/home-icon.png";
 import message_icon from "@assets/icons/message-icon.png";
+import mobile_prepaid_icon from "@assets/icons/mobile-prepaid-icon.png";
+import pay_the_bill_icon from "@assets/icons/pay-the-bill-icon.png";
+import save_online_icon from "@assets/icons/save-online-icon.png";
 import search_icon from "@assets/icons/search-icon.png";
 import setting_icon from "@assets/icons/setting-icon.png";
+import transaction_card_icon from "@assets/icons/transaction-card-icon.png";
+import transfert_icon from "@assets/icons/transfer-icon.png";
+import withdraw_icon from "@assets/icons/withdraw-icon.png";
 import sign_in_image from "@assets/images/auth/sign-in-image.png";
 import sign_up_image from "@assets/images/auth/sign-up-image.png";
+import master_card_bg from "@assets/images/card/master-card-bg.png";
+import master_card_logo from "@assets/images/card/master_card_logo.png";
+import visa_card_bg from "@assets/images/card/visa-card-bg.png";
+import visa_logo from "@assets/images/card/visa-logo.png";
+import notification_icon from "@assets/images/home/notification-icon.png";
+import user_profile_image from "@assets/images/home/user-profile-image.png";
 
 // GLOBALS COLORS
 export const COLORS = {
@@ -62,4 +78,20 @@ export const images = {
   search_icon,
   message_icon,
   setting_icon,
+  bell_icon,
+  notification_icon,
+  user_profile_image,
+  account_icon,
+  transfert_icon,
+  transaction_card_icon,
+  beneficiary_icon,
+  credit_card_icon,
+  mobile_prepaid_icon,
+  pay_the_bill_icon,
+  save_online_icon,
+  withdraw_icon,
+  master_card_bg,
+  visa_card_bg,
+  visa_logo,
+  master_card_logo,
 };
