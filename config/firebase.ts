@@ -4,20 +4,38 @@ import { initializeApp } from "firebase/app";
 import { getReactNativePersistence, initializeAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Firebase configuration from environment variables
+// Make sure to set these in .env.local (never commit to git)
+// See .env.example for all required variables
 const firebaseConfig = {
-  apiKey: "AIzaSyBISJ4tVYeuwqr5gKn5PDieD-TDInTgnVc",
-  authDomain: "ibank-mobile-app.firebaseapp.com",
-  projectId: "ibank-mobile-app",
-  storageBucket: "ibank-mobile-app.firebasestorage.app",
-  messagingSenderId: "160824508991",
-  appId: "1:160824508991:web:c4cf7ae3f970d6a4f66e8a",
-  measurementId: "G-TRBC02NQQV",
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
+
+// Validate that required environment variables are set
+const requiredEnvVars = [
+  "EXPO_PUBLIC_FIREBASE_API_KEY",
+  "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN",
+  "EXPO_PUBLIC_FIREBASE_PROJECT_ID",
+  "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET",
+  "EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID",
+  "EXPO_PUBLIC_FIREBASE_APP_ID",
+];
+
+const missingEnvVars = requiredEnvVars.filter((envVar) => !process.env[envVar]);
+
+if (missingEnvVars.length > 0) {
+  throw new Error(
+    `Missing required environment variables: ${missingEnvVars.join(", ")}. ` +
+      `Please create a .env.local file with all required variables. ` +
+      `See .env.example for reference.`,
+  );
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
