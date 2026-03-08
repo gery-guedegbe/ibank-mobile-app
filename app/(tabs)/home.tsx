@@ -23,7 +23,7 @@ const HomeScreen = () => {
     <SafeAreaView className="h-full flex-1 bg-white">
       <View className="absolute inset-0 bg-primary-1" />
 
-      <ScrollView className="flex-1">
+      <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
         <View className="gap-2">
           <View className="flex flex-row items-center justify-between px-6 py-8">
             <View className="flex flex-row items-center gap-4">
@@ -77,6 +77,7 @@ const HomeScreen = () => {
                 paddingHorizontal: 20,
                 marginBottom: 15,
               }}
+              scrollEnabled={false}
               showsVerticalScrollIndicator={false}
               className="flex-1 bg-neutral-6"
             />
