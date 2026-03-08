@@ -17,6 +17,7 @@ interface AppInputProps {
   placeholder: string;
   secureTextEntry?: boolean;
   onChangeText: (text: string) => void;
+  onFocus?: () => void;
 }
 
 const AppInput = ({
@@ -27,6 +28,7 @@ const AppInput = ({
   placeholder,
   secureTextEntry = false,
   onChangeText,
+  onFocus,
 }: AppInputProps) => {
   const [isFocused, setIsFocused] = useState(false);
   const [isSecured, setIsSecured] = useState(secureTextEntry);
@@ -47,8 +49,11 @@ const AppInput = ({
         placeholder={placeholder}
         secureTextEntry={isSecured}
         onChangeText={onChangeText}
-        onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
+        onFocus={() => {
+          setIsFocused(true);
+          onFocus?.();
+        }}
         placeholderTextColor="#CACACA"
         className="flex-1 font-poppins-medium font-medium leading-[150%]  text-neutral-1"
       />

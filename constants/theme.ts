@@ -9,6 +9,7 @@ import eye_open_icon from "@assets/icons/eye-open-icon.png";
 import eye_open from "@assets/icons/eye-open.png";
 import fingerprint_icon from "@assets/icons/fingerprint-icon.png";
 import home_icon from "@assets/icons/home-icon.png";
+import location_icon from "@assets/icons/location-icon.png";
 import message_icon from "@assets/icons/message-icon.png";
 import mobile_prepaid_icon from "@assets/icons/mobile-prepaid-icon.png";
 import pay_the_bill_icon from "@assets/icons/pay-the-bill-icon.png";
@@ -26,6 +27,10 @@ import visa_card_bg from "@assets/images/card/visa-card-bg.png";
 import visa_logo from "@assets/images/card/visa-logo.png";
 import notification_icon from "@assets/images/home/notification-icon.png";
 import user_profile_image from "@assets/images/home/user-profile-image.png";
+import branch_icon from "@assets/images/search/branch-icon.png";
+import exchange_icon from "@assets/images/search/exchange-icon.png";
+import exchange_rate_icon from "@assets/images/search/exchange-rate-icon.png";
+import interest_rate_icon from "@assets/images/search/interest-rate-icon.png";
 
 // GLOBALS COLORS
 export const COLORS = {
@@ -94,4 +99,9 @@ export const images = {
   visa_card_bg,
   visa_logo,
   master_card_logo,
+  branch_icon,
+  exchange_icon,
+  exchange_rate_icon,
+  interest_rate_icon,
+  location_icon,
 };
