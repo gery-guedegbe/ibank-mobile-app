@@ -25,12 +25,22 @@ import master_card_bg from "@assets/images/card/master-card-bg.png";
 import master_card_logo from "@assets/images/card/master_card_logo.png";
 import visa_card_bg from "@assets/images/card/visa-card-bg.png";
 import visa_logo from "@assets/images/card/visa-logo.png";
+import china_flag from "@assets/images/flags/china-flag.png";
+import english_flag from "@assets/images/flags/english-flag.png";
+import french_flag from "@assets/images/flags/french-flag.png";
+import japan_flag from "@assets/images/flags/japanese-flag.png";
+import korea_flag from "@assets/images/flags/korea-flag.png";
+import nicaragua_flag from "@assets/images/flags/nicaragua-flag.png";
+import portuguese_flag from "@assets/images/flags/portuguese-flag.png";
+import russia_flag from "@assets/images/flags/russia-flag.png";
+import vietnam_flag from "@assets/images/flags/vietnam-flag.png";
 import notification_icon from "@assets/images/home/notification-icon.png";
 import user_profile_image from "@assets/images/home/user-profile-image.png";
 import branch_icon from "@assets/images/search/branch-icon.png";
 import exchange_icon from "@assets/images/search/exchange-icon.png";
 import exchange_rate_icon from "@assets/images/search/exchange-rate-icon.png";
 import interest_rate_icon from "@assets/images/search/interest-rate-icon.png";
+import check_blue_icon from "@assets/icons/check-blue-icon.png";
 
 // GLOBALS COLORS
 export const COLORS = {
@@ -104,4 +114,14 @@ export const images = {
   exchange_rate_icon,
   interest_rate_icon,
   location_icon,
+  china_flag,
+  korea_flag,
+  russia_flag,
+  french_flag,
+  english_flag,
+  nicaragua_flag,
+  japan_flag,
+  vietnam_flag,
+  portuguese_flag,
+  check_blue_icon,
 };

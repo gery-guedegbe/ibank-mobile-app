@@ -1,13 +1,15 @@
-import InterestRateItem from "@/components/interest/InterestRateItem";
-import { INTEREST_RATES } from "@/constants/data";
+import LanguageItem from "@/components/language/LanguageItem";
+import { LANGUAGES } from "@/constants/data";
 import { images } from "@/constants/theme";
 import { useRouter } from "expo-router";
-import React from "react";
+import React, { useState } from "react";
 import { FlatList, Image, Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const InterestRateScreen = () => {
+const LanguageScreen = () => {
   const router = useRouter();
+
+  const [selectedId, setSelectedId] = useState("3");
 
   return (
     <SafeAreaView className="h-full flex-1 bg-white">
@@ -22,35 +24,26 @@ const InterestRateScreen = () => {
           </Pressable>
 
           <Text className="font-poppins-semibold text-xl font-semibold leading-7 text-neutral-1">
-            Interest rate
+            Language
           </Text>
         </View>
 
-        <View className="flex-row ">
-          <Text className="flex-1 font-poppins-semibold text-base font-semibold leading-6 text-neutral-3">
-            Interest kind
-          </Text>
-
-          <Text className="w-20 text-center font-poppins-semibold text-base font-semibold leading-6 text-neutral-3">
-            Deposit
-          </Text>
-
-          <Text className="w-20 text-right font-poppins-semibold text-base font-semibold leading-6 text-neutral-3">
-            Rate
-          </Text>
-        </View>
-
-        {/* Liste des taux */}
         <FlatList
-          data={INTEREST_RATES}
+          data={LANGUAGES}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <InterestRateItem item={item} />}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 40 }}
+          renderItem={({ item }) => (
+            <LanguageItem
+              item={item}
+              isSelected={item.id === selectedId}
+              onSelect={() => setSelectedId(item.id)}
+            />
+          )}
         />
       </View>
     </SafeAreaView>
   );
 };
 
-export default InterestRateScreen;
+export default LanguageScreen;

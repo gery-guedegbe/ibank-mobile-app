@@ -22,3 +22,10 @@ export interface Branch {
   longitude: number;
   distance?: number;
 }
+
+export interface InterestRate {
+  id: string;
+  kind: string;
+  deposit: string;
+  rate: string;
+}
