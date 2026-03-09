@@ -55,7 +55,7 @@ const AppInput = ({
           onFocus?.();
         }}
         placeholderTextColor="#CACACA"
-        className="flex-1 font-poppins-medium font-medium leading-[150%]  text-neutral-1"
+        className="flex-1 font-poppins-medium font-medium leading-[150%] text-neutral-1"
       />
 
       {secureTextEntry && (

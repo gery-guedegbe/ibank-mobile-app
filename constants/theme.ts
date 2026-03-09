@@ -3,7 +3,11 @@ import arrow_left_black from "@assets/icons/arrow-left-black.png";
 import arrow_left from "@assets/icons/arrow-left.png";
 import bell_icon from "@assets/icons/bell-icon.png";
 import beneficiary_icon from "@assets/icons/beneficiary-icon.png";
+import check_blue_icon from "@assets/icons/check-blue-icon.png";
+import close_icon from "@assets/icons/close-icon.png";
 import credit_card_icon from "@assets/icons/credit-card-icon.png";
+import exchange_arrows_icon from "@assets/icons/exchange-arrows-icon.png";
+import exchange_switch_icon from "@assets/icons/exchange-switch-icon.png";
 import eye_close_icon from "@assets/icons/eye-close-icon.png";
 import eye_open_icon from "@assets/icons/eye-open-icon.png";
 import eye_open from "@assets/icons/eye-open.png";
@@ -25,6 +29,7 @@ import master_card_bg from "@assets/images/card/master-card-bg.png";
 import master_card_logo from "@assets/images/card/master_card_logo.png";
 import visa_card_bg from "@assets/images/card/visa-card-bg.png";
 import visa_logo from "@assets/images/card/visa-logo.png";
+import exchange_image from "@assets/images/exchange-image.png";
 import china_flag from "@assets/images/flags/china-flag.png";
 import english_flag from "@assets/images/flags/english-flag.png";
 import french_flag from "@assets/images/flags/french-flag.png";
@@ -40,7 +45,6 @@ import branch_icon from "@assets/images/search/branch-icon.png";
 import exchange_icon from "@assets/images/search/exchange-icon.png";
 import exchange_rate_icon from "@assets/images/search/exchange-rate-icon.png";
 import interest_rate_icon from "@assets/images/search/interest-rate-icon.png";
-import check_blue_icon from "@assets/icons/check-blue-icon.png";
 
 // GLOBALS COLORS
 export const COLORS = {
@@ -124,4 +128,8 @@ export const images = {
   vietnam_flag,
   portuguese_flag,
   check_blue_icon,
+  exchange_image,
+  exchange_arrows_icon,
+  exchange_switch_icon,
+  close_icon,
 };
