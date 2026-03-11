@@ -20,11 +20,15 @@ const HomeScreen = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <SafeAreaView className="h-full flex-1 bg-white">
+    <SafeAreaView className="relative flex-1 bg-white">
       <View className="absolute inset-0 bg-primary-1" />
 
-      <ScrollView className="flex-1" showsVerticalScrollIndicator={false}>
-        <View className="gap-2">
+      <ScrollView
+        className="flex-1"
+        contentContainerStyle={{ flexGrow: 1 }}
+        showsVerticalScrollIndicator={false}
+      >
+        <View className="flex-1 gap-2">
           <View className="flex flex-row items-center justify-between px-6 py-8">
             <View className="flex flex-row items-center gap-4">
               <Image
@@ -45,7 +49,7 @@ const HomeScreen = () => {
             />
           </View>
 
-          <View className="h-full gap-6 rounded-t-[30px] bg-neutral-6 p-0 shadow-xl">
+          <View className="flex-1 gap-6 rounded-t-[30px] bg-neutral-6 p-0 shadow-xl">
             <View className="mt-8">
               <CreditCard
                 bg={images.visa_card_bg}

@@ -38,19 +38,16 @@ const TabLayout = () => {
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {
-          height: Platform.OS === "ios" ? 88 : 72,
+          position: "absolute",
+          height: Platform.OS === "ios" ? 90 : 80,
+          borderTopWidth: 0,
           paddingHorizontal: 24,
-          shadowColor: "#3629B7",
           backgroundColor: "#FFFFFF",
-          shadowOpacity: 0.05,
-          shadowRadius: 20,
-          elevation: 10,
+          elevation: 0,
         },
         tabBarItemStyle: {
-          flex: 1,
-          justifyContent: "center",
-          alignItems: "center",
           marginVertical: 16,
+          paddingBottom: Platform.OS === "ios" ? 20 : 0,
         },
       }}
     >

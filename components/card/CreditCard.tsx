@@ -36,8 +36,12 @@ const CreditCard = ({
       accessibilityLabel={`Carte de crédit de ${username}, solde ${amount} dollars`}
       source={bg}
       resizeMode="cover"
-      style={{ width: width }}
-      className="z-50 h-[204px] self-center"
+      style={{
+        width: "100%",
+        height: undefined,
+        aspectRatio: 16 / 9,
+      }}
+      className="z-50 self-center"
     >
       <View className="flex flex-1 flex-col items-start px-12 py-6 shadow-lg">
         <Text className="font-poppins-regular text-2xl text-white">

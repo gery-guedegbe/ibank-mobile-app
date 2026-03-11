@@ -17,7 +17,7 @@ export default function BranchScreen() {
   const [selectedBranch, setSelectedBranch] = useState<Branch | null>(null);
 
   return (
-    <SafeAreaView className="flex-1 bg-white">
+    <SafeAreaView className="flex-1 bg-white" edges={["top"]}>
       {/* header */}
 
       <View className="flex-row items-center gap-3 px-6 py-4">
@@ -30,7 +30,7 @@ export default function BranchScreen() {
 
       {/* map */}
 
-      <View className="flex-1">
+      <View className="flex-1 overflow-hidden">
         {/* Map en arrière-plan */}
         <BranchMap
           branches={BRANCHES}
