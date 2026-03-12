@@ -75,7 +75,10 @@ const HomeScreen = () => {
               keyExtractor={(item) => item.id.toString()}
               renderItem={({ item }) => <MenuCard {...item} />}
               numColumns={3}
-              contentContainerStyle={{ marginVertical: 10 }}
+              contentContainerStyle={{
+                marginVertical: 10,
+                paddingBottom: 30,
+              }}
               columnWrapperStyle={{
                 justifyContent: "space-between",
                 paddingHorizontal: 20,

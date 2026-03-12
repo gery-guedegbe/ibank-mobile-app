@@ -10,10 +10,10 @@ import {
 } from "react-native";
 
 interface AppInputProps {
-  value: string;
+  value: string | undefined;
   hasIcon?: boolean;
   icon?: ImageSourcePropType;
-  keyboardType: KeyboardTypeOptions;
+  keyboardType?: KeyboardTypeOptions;
   placeholder: string;
   secureTextEntry?: boolean;
   onChangeText: (text: string) => void;

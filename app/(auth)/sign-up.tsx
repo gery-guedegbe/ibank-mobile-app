@@ -19,7 +19,6 @@ const SignUpScreen = () => {
   const {
     control,
     handleSubmit,
-
     formState: { errors, isSubmitting },
   } = useForm<RegisterFormData>({
     mode: "onChange",

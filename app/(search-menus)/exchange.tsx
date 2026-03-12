@@ -54,6 +54,7 @@ const ExchangeScreen = () => {
           <Pressable onPress={() => router.back()} hitSlop={16}>
             <Image source={images.arrow_left_black} className="h-4 w-4" />
           </Pressable>
+
           <Text className="font-poppins-semibold text-xl text-neutral-1">
             Exchange
           </Text>

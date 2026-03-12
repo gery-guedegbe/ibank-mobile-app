@@ -1,11 +1,14 @@
 import account_icon from "@assets/icons/account-icon.png";
+import add_icon from "@assets/icons/add-icon.png";
 import arrow_left_black from "@assets/icons/arrow-left-black.png";
 import arrow_left from "@assets/icons/arrow-left.png";
+import bank_icon from "@assets/icons/bank-icon.png";
 import bell_icon from "@assets/icons/bell-icon.png";
 import beneficiary_icon from "@assets/icons/beneficiary-icon.png";
 import check_blue_icon from "@assets/icons/check-blue-icon.png";
 import close_icon from "@assets/icons/close-icon.png";
 import credit_card_icon from "@assets/icons/credit-card-icon.png";
+import credit_card_white_icon from "@assets/icons/credit-card-white-icon.png";
 import exchange_arrows_icon from "@assets/icons/exchange-arrows-icon.png";
 import exchange_switch_icon from "@assets/icons/exchange-switch-icon.png";
 import eye_close_icon from "@assets/icons/eye-close-icon.png";
@@ -22,6 +25,7 @@ import search_icon from "@assets/icons/search-icon.png";
 import setting_icon from "@assets/icons/setting-icon.png";
 import transaction_card_icon from "@assets/icons/transaction-card-icon.png";
 import transfert_icon from "@assets/icons/transfer-icon.png";
+import user_icon from "@assets/icons/user-icon.png";
 import withdraw_icon from "@assets/icons/withdraw-icon.png";
 import sign_in_image from "@assets/images/auth/sign-in-image.png";
 import sign_up_image from "@assets/images/auth/sign-up-image.png";
@@ -45,6 +49,8 @@ import branch_icon from "@assets/images/search/branch-icon.png";
 import exchange_icon from "@assets/images/search/exchange-icon.png";
 import exchange_rate_icon from "@assets/images/search/exchange-rate-icon.png";
 import interest_rate_icon from "@assets/images/search/interest-rate-icon.png";
+import beneficiary_user_1 from "@assets/images/transfer/beneficiary-user-1.png";
+import beneficiary_user_2 from "@assets/images/transfer/beneficiary-user-2.png";
 
 // GLOBALS COLORS
 export const COLORS = {
@@ -132,4 +138,10 @@ export const images = {
   exchange_arrows_icon,
   exchange_switch_icon,
   close_icon,
+  bank_icon,
+  credit_card_white_icon,
+  user_icon,
+  beneficiary_user_1,
+  beneficiary_user_2,
+  add_icon,
 };

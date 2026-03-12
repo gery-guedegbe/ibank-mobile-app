@@ -194,3 +194,45 @@ export const LANGUAGES = [
   { id: "8", name: "Nicaragua", flag: images.nicaragua_flag },
   { id: "9", name: "Russia", flag: images.russia_flag },
 ];
+
+export const TRANSFERT_CARD_ITEMS = [
+  {
+    id: "1",
+    icon: images.credit_card_white_icon,
+    title: "Transfer via card number",
+    slug: "card",
+  },
+  {
+    id: "2",
+    icon: images.user_icon,
+    title: "Transfer to the same bank",
+    slug: "same_bank",
+  },
+  {
+    id: "3",
+    icon: images.bank_icon,
+    title: "Transfer to another bank",
+    slug: "other_bank",
+  },
+];
+
+export const BENEFICIARY_ITEMS = [
+  { id: "0", icon: null, name: "" },
+  { id: "1", icon: images.beneficiary_user_1, name: "Emma" },
+  { id: "2", icon: images.beneficiary_user_2, name: "Justin" },
+];
+
+export const MY_CARDS = [
+  {
+    id: "1",
+    label: "VISA **** **** **** 1234",
+    balance: "10,000",
+    fullNumber: "4756123456781234",
+  },
+  {
+    id: "2",
+    label: "MasterCard **** **** **** 5678",
+    balance: "5,450",
+    fullNumber: "5102567812345678",
+  },
+];
