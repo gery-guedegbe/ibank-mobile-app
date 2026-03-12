@@ -51,6 +51,7 @@ import exchange_rate_icon from "@assets/images/search/exchange-rate-icon.png";
 import interest_rate_icon from "@assets/images/search/interest-rate-icon.png";
 import beneficiary_user_1 from "@assets/images/transfer/beneficiary-user-1.png";
 import beneficiary_user_2 from "@assets/images/transfer/beneficiary-user-2.png";
+import transfer_confirmed_image from "@assets/images/transfer/transfer-confirmed-image.png";
 
 // GLOBALS COLORS
 export const COLORS = {
@@ -144,4 +145,5 @@ export const images = {
   beneficiary_user_1,
   beneficiary_user_2,
   add_icon,
+  transfer_confirmed_image,
 };

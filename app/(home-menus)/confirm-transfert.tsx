@@ -42,8 +42,15 @@ const ConfirmTransferScreen = () => {
   const onConfirm = (data: ConfirmTransferFormData) => {
     console.log("Transaction Finalized", data);
 
+    router.push({
+      pathname: "/transfer-succed",
+      params: {
+        amount: data.amount,
+        beneficiary: data.beneficiaryName,
+      },
+    });
+
     clearTransferData();
-    router.push("/transfer-succed");
   };
 
   return (
