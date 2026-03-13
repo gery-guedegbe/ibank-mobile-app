@@ -32,7 +32,7 @@ module.exports = {
         "caption-2": ["14px", { lineHeight: "18px" }],
       },
       colors: {
-        primary: { 1: "#3629B7", 2: "#5655B9", 3: "#A8A3D7" },
+        primary: { 1: "#3629B7", 2: "#5655B9", 3: "#A8A3D7", 4: "#F2F1F9" },
         neutral: {
           1: "#343434",
           2: "#898989",

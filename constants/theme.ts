@@ -1,5 +1,6 @@
 import account_icon from "@assets/icons/account-icon.png";
 import add_icon from "@assets/icons/add-icon.png";
+import alert_icon from "@assets/icons/alert-icon.png";
 import arrow_left_black from "@assets/icons/arrow-left-black.png";
 import arrow_left from "@assets/icons/arrow-left.png";
 import bank_icon from "@assets/icons/bank-icon.png";
@@ -20,6 +21,8 @@ import location_icon from "@assets/icons/location-icon.png";
 import message_icon from "@assets/icons/message-icon.png";
 import mobile_prepaid_icon from "@assets/icons/mobile-prepaid-icon.png";
 import pay_the_bill_icon from "@assets/icons/pay-the-bill-icon.png";
+import paypal_icon from "@assets/icons/paypal-icon.png";
+import right_white_icon from "@assets/icons/right-white-icon.png";
 import save_online_icon from "@assets/icons/save-online-icon.png";
 import search_icon from "@assets/icons/search-icon.png";
 import setting_icon from "@assets/icons/setting-icon.png";
@@ -27,6 +30,7 @@ import transaction_card_icon from "@assets/icons/transaction-card-icon.png";
 import transfert_icon from "@assets/icons/transfer-icon.png";
 import user_icon from "@assets/icons/user-icon.png";
 import withdraw_icon from "@assets/icons/withdraw-icon.png";
+import withdraw_white_icon from "@assets/icons/withdraw-white-icon.png";
 import sign_in_image from "@assets/images/auth/sign-in-image.png";
 import sign_up_image from "@assets/images/auth/sign-up-image.png";
 import master_card_bg from "@assets/images/card/master-card-bg.png";
@@ -146,4 +150,8 @@ export const images = {
   beneficiary_user_2,
   add_icon,
   transfer_confirmed_image,
+  alert_icon,
+  paypal_icon,
+  withdraw_white_icon,
+  right_white_icon,
 };

@@ -236,3 +236,46 @@ export const MY_CARDS = [
     fullNumber: "5102567812345678",
   },
 ];
+
+export const MESSAGES_DATA = [
+  {
+    id: "1",
+    title: "Bank of America",
+    subtitle: "Bank of America : 256486 is the au...",
+    date: "Today",
+    icon: images.bank_icon,
+    icon_bg: "#3629B7",
+  },
+  {
+    id: "2",
+    title: "Account",
+    subtitle: "Your account is limited. Please foll...",
+    date: "12/10",
+    icon: images.user_icon,
+    icon_bg: "#FF4267",
+  },
+  {
+    id: "3",
+    title: "Alert",
+    subtitle: "Your statement is ready for you to...",
+    date: "11/10",
+    icon: images.alert_icon,
+    icon_bg: "#0890FE",
+  },
+  {
+    id: "4",
+    title: "Paypal",
+    subtitle: "Your account has been locked. Ple...",
+    date: "10/11",
+    icon: images.paypal_icon,
+    icon_bg: "#FFAF2A",
+  },
+  {
+    id: "5",
+    title: "Withdraw",
+    subtitle: "Dear customer, 2987456 is your co...",
+    date: "10/12",
+    icon: images.withdraw_white_icon,
+    icon_bg: "#52D5BA",
+  },
+];
