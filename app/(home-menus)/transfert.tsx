@@ -183,6 +183,7 @@ const TransfertScreen = () => {
             control={control}
             errors={errors}
             transactionType={transactionType}
+            cardNumber={selectedCardNumber}
           />
 
           <AppButton title="Confirm" onPress={handleSubmit(onSubmit)} />

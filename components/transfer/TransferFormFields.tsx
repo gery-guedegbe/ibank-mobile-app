@@ -9,9 +9,15 @@ interface Props {
   control: Control<CreditCardFormData>;
   errors: FieldErrors<CreditCardFormData>;
   transactionType: "card" | "same_bank" | "other_bank";
+  cardNumber: string;
 }
 
-const TransferFormFields = ({ control, errors, transactionType }: Props) => {
+const TransferFormFields = ({
+  control,
+  errors,
+  transactionType,
+  cardNumber,
+}: Props) => {
   return (
     <View className="gap-4">
       {/* Beneficiary Name */}
@@ -89,7 +95,7 @@ const TransferFormFields = ({ control, errors, transactionType }: Props) => {
       <View>
         <Controller
           control={control}
-          name="beneficiaryCardNumber"
+          name="fromCardNumber"
           render={({ field: { onChange, value } }) => (
             <AppInput
               placeholder="Card number"
