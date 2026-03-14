@@ -39,7 +39,7 @@ const TabLayout = () => {
         tabBarShowLabel: false,
         tabBarStyle: {
           position: "absolute",
-          height: Platform.OS === "ios" ? 90 : 80,
+          height: Platform.OS === "ios" ? 90 : 70,
           borderTopWidth: 0,
           paddingHorizontal: 24,
           backgroundColor: "#FFFFFF",

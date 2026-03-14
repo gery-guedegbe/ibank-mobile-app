@@ -10,6 +10,7 @@ import check_blue_icon from "@assets/icons/check-blue-icon.png";
 import close_icon from "@assets/icons/close-icon.png";
 import credit_card_icon from "@assets/icons/credit-card-icon.png";
 import credit_card_white_icon from "@assets/icons/credit-card-white-icon.png";
+import electric_icon from "@assets/icons/electric-icon.png";
 import exchange_arrows_icon from "@assets/icons/exchange-arrows-icon.png";
 import exchange_switch_icon from "@assets/icons/exchange-switch-icon.png";
 import eye_close_icon from "@assets/icons/eye-close-icon.png";
@@ -17,18 +18,22 @@ import eye_open_icon from "@assets/icons/eye-open-icon.png";
 import eye_open from "@assets/icons/eye-open.png";
 import fingerprint_icon from "@assets/icons/fingerprint-icon.png";
 import home_icon from "@assets/icons/home-icon.png";
+import internet_bill_icon from "@assets/icons/internet-bill-icon.png";
 import location_icon from "@assets/icons/location-icon.png";
 import message_icon from "@assets/icons/message-icon.png";
 import mobile_prepaid_icon from "@assets/icons/mobile-prepaid-icon.png";
 import pay_the_bill_icon from "@assets/icons/pay-the-bill-icon.png";
 import paypal_icon from "@assets/icons/paypal-icon.png";
+import receipt_list_icon from "@assets/icons/receipt-list-icon.png";
 import right_white_icon from "@assets/icons/right-white-icon.png";
+import salary_icon from "@assets/icons/salary-icon.png";
 import save_online_icon from "@assets/icons/save-online-icon.png";
 import search_icon from "@assets/icons/search-icon.png";
 import setting_icon from "@assets/icons/setting-icon.png";
 import transaction_card_icon from "@assets/icons/transaction-card-icon.png";
 import transfert_icon from "@assets/icons/transfer-icon.png";
 import user_icon from "@assets/icons/user-icon.png";
+import water_icon from "@assets/icons/water-icon.png";
 import withdraw_icon from "@assets/icons/withdraw-icon.png";
 import withdraw_white_icon from "@assets/icons/withdraw-white-icon.png";
 import sign_in_image from "@assets/images/auth/sign-in-image.png";
@@ -37,6 +42,7 @@ import master_card_bg from "@assets/images/card/master-card-bg.png";
 import master_card_logo from "@assets/images/card/master_card_logo.png";
 import visa_card_bg from "@assets/images/card/visa-card-bg.png";
 import visa_logo from "@assets/images/card/visa-logo.png";
+import chart_image from "@assets/images/chart-image.png";
 import exchange_image from "@assets/images/exchange-image.png";
 import china_flag from "@assets/images/flags/china-flag.png";
 import english_flag from "@assets/images/flags/english-flag.png";
@@ -154,4 +160,10 @@ export const images = {
   paypal_icon,
   withdraw_white_icon,
   right_white_icon,
+  chart_image,
+  water_icon,
+  salary_icon,
+  electric_icon,
+  internet_bill_icon,
+  receipt_list_icon,
 };
