@@ -35,7 +35,12 @@ const TransferSucced = () => {
           <Image
             source={images.transfer_confirmed_image}
             resizeMode="contain"
-            className="h-[188px] w-[342px]"
+            style={{
+              width: "100%",
+              height: undefined,
+              aspectRatio: 16 / 9,
+            }}
+            // className="h-[188px] w-[342px]"
           />
 
           <View className="gap-4">

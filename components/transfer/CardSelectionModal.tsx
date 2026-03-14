@@ -1,5 +1,12 @@
 import React from "react";
 import { Modal, Pressable, ScrollView, Text, View } from "react-native";
+import Animated, {
+  FadeIn,
+  FadeOut,
+  SlideInDown,
+  SlideOutDown,
+} from "react-native-reanimated";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 interface Card {
   id: string;
@@ -23,15 +30,33 @@ const CardSelectionModal = ({
   onSelect,
   selectedCardId,
 }: CardSelectionModalProps) => {
+  const insets = useSafeAreaInsets();
+
   return (
     <Modal
       visible={visible}
       transparent
       animationType="slide"
       onRequestClose={onClose}
+      className="flex-1"
     >
-      <View className="flex-1 justify-end bg-black/50">
-        <View className="max-h-[70%] rounded-t-[30px] bg-white p-6 pb-10">
+      <View className="flex-1 justify-end">
+        <Animated.View
+          entering={FadeIn.duration(500)}
+          exiting={FadeOut.duration(500)}
+          className="absolute inset-0 bg-black/50"
+        >
+          <Pressable className="flex-1" onPress={onClose} />
+        </Animated.View>
+
+        <Animated.View
+          entering={SlideInDown.springify()}
+          exiting={SlideOutDown.duration(300)}
+          style={{
+            paddingBottom: insets.bottom > 0 ? insets.bottom : 24,
+          }}
+          className="max-h-[70%] rounded-t-[30px] bg-white p-6 pb-10"
+        >
           <View className="mb-6 flex-row items-center justify-between">
             <Text className="font-poppins-semibold text-lg text-neutral-1">
               Select account
@@ -61,7 +86,7 @@ const CardSelectionModal = ({
               </Pressable>
             ))}
           </ScrollView>
-        </View>
+        </Animated.View>
       </View>
     </Modal>
   );
