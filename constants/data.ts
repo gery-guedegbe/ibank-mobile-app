@@ -332,3 +332,34 @@ export const TRANSACTION_REPORT_ITEMS = [
     date: "Yesterday",
   },
 ];
+
+export const PAY_THE_BILL_MENUS = [
+  {
+    id: 1,
+    title: "Electric",
+    desc: "Pay electric bill this month",
+    icon: images.electric_bill_icon,
+    link: "(pay-the-bill)/electric-bill",
+  },
+  {
+    id: 2,
+    title: "Water bill",
+    desc: "Pay water bill this month",
+    icon: images.water_bill_icon,
+    link: "(pay-the-bill)/water-bill",
+  },
+  {
+    id: 3,
+    title: "Mobile bill",
+    desc: "Pay mobile bill this month",
+    icon: images.mobile_bill_icon,
+    link: "(pay-the-bill)/mobile-bill",
+  },
+  {
+    id: 4,
+    title: "Internet bill",
+    desc: "Pay internet bill this month",
+    icon: images.internet_pay_bill_icon,
+    link: "(pay-the-bill)/internet-bill",
+  },
+];

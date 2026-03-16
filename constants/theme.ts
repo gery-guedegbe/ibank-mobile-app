@@ -23,6 +23,10 @@ import location_icon from "@assets/icons/location-icon.png";
 import message_icon from "@assets/icons/message-icon.png";
 import mobile_prepaid_icon from "@assets/icons/mobile-prepaid-icon.png";
 import pay_the_bill_icon from "@assets/icons/pay-the-bill-icon.png";
+import electric_bill_icon from "@assets/icons/payment-bill-icons/electric-bill-icon.png";
+import internet_pay_bill_icon from "@assets/icons/payment-bill-icons/internet-bill-icon.png";
+import mobile_bill_icon from "@assets/icons/payment-bill-icons/mobile-bill-icon.png";
+import water_bill_icon from "@assets/icons/payment-bill-icons/water-bill-icon.png";
 import paypal_icon from "@assets/icons/paypal-icon.png";
 import receipt_list_icon from "@assets/icons/receipt-list-icon.png";
 import right_white_icon from "@assets/icons/right-white-icon.png";
@@ -55,6 +59,7 @@ import russia_flag from "@assets/images/flags/russia-flag.png";
 import vietnam_flag from "@assets/images/flags/vietnam-flag.png";
 import notification_icon from "@assets/images/home/notification-icon.png";
 import user_profile_image from "@assets/images/home/user-profile-image.png";
+import payment_successfull_image from "@assets/images/payment-sucessfull-image.png";
 import branch_icon from "@assets/images/search/branch-icon.png";
 import exchange_icon from "@assets/images/search/exchange-icon.png";
 import exchange_rate_icon from "@assets/images/search/exchange-rate-icon.png";
@@ -166,4 +171,9 @@ export const images = {
   electric_icon,
   internet_bill_icon,
   receipt_list_icon,
+  payment_successfull_image,
+  electric_bill_icon,
+  internet_pay_bill_icon,
+  mobile_bill_icon,
+  water_bill_icon,
 };
