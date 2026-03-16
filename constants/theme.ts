@@ -60,6 +60,9 @@ import vietnam_flag from "@assets/images/flags/vietnam-flag.png";
 import notification_icon from "@assets/images/home/notification-icon.png";
 import user_profile_image from "@assets/images/home/user-profile-image.png";
 import payment_successfull_image from "@assets/images/payment-sucessfull-image.png";
+import save_online_add_image from "@assets/images/save-online/save-online-add-image.png";
+import save_online_management_image from "@assets/images/save-online/save-online-management-image.png";
+import save_online_image from "@assets/images/save-online/save_online_image.png";
 import branch_icon from "@assets/images/search/branch-icon.png";
 import exchange_icon from "@assets/images/search/exchange-icon.png";
 import exchange_rate_icon from "@assets/images/search/exchange-rate-icon.png";
@@ -176,4 +179,7 @@ export const images = {
   internet_pay_bill_icon,
   mobile_bill_icon,
   water_bill_icon,
+  save_online_add_image,
+  save_online_management_image,
+  save_online_image,
 };

@@ -363,3 +363,55 @@ export const PAY_THE_BILL_MENUS = [
     link: "(pay-the-bill)/internet-bill",
   },
 ];
+
+export const SAVE_ONLINE_MENUS = [
+  {
+    id: 1,
+    title: "Add",
+    desc: "Add new save online account",
+    icon: images.save_online_add_image,
+    link: "(save-online)/add",
+  },
+  {
+    id: 2,
+    title: "Management",
+    desc: "Manage your save online account",
+    icon: images.save_online_management_image,
+    link: "(save-online)/management",
+  },
+];
+
+export const TIME_DEPOSIT_OPTIONS = [
+  { label: "3 months (Interest rate 4%)", value: "3 months" },
+  { label: "6 months (Interest rate 4.5%)", value: "6 months" },
+  { label: "12 months (Interest rate 5%)", value: "12 months" },
+  { label: "18 months (Interest rate 5.5%)", value: "18 months" },
+  { label: "24 months (Interest rate 6%)", value: "24 months" },
+];
+
+export const SAVINGS_DATA = [
+  {
+    id: "1",
+    accountNumber: "1900 8988 5456",
+    from: "02/11/2019",
+    to: "02/11/2020",
+    duration: "12 months",
+    rate: "5%",
+  },
+  {
+    id: "2",
+    accountNumber: "1900 8112 5222",
+    from: "02/11/2019",
+    to: "02/11/2020",
+    duration: "12 months",
+    rate: "5%",
+  },
+  {
+    id: "3",
+    accountNumber: "4411 0000 1234",
+    from: "02/11/2019",
+    to: "02/11/2020",
+    duration: "12 months",
+    rate: "5%",
+  },
+];

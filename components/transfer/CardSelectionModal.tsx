@@ -50,7 +50,7 @@ const CardSelectionModal = ({
         </Animated.View>
 
         <Animated.View
-          entering={SlideInDown.springify()}
+          entering={SlideInDown.springify().stiffness(90)}
           exiting={SlideOutDown.duration(300)}
           style={{
             paddingBottom: insets.bottom > 0 ? insets.bottom : 24,
