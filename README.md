@@ -301,7 +301,7 @@ Les contributions sont bienvenues ! Veuillez :
 
 ## Contact
 
-**Développeur** : [Votre Nom](https://github.com/gery-guedegbe)
+**Développeur** : [Géry GUEDEGBE](https://github.com/gery-guedegbe)
 
 ---
 
