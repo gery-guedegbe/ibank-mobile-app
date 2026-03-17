@@ -48,7 +48,7 @@ const TransferSucced = () => {
               Transfer successful!
             </Text>
 
-            <Text className="text-center font-poppins-medium text-sm font-medium leading-[150%] text-neutral-1">
+            <Text className="px-4 text-center font-poppins-medium text-sm font-medium leading-[150%] text-neutral-1">
               You have successfully transferred{" "}
               <Text className="font-poppins-bold text-sm font-bold leading-[150%] text-semantic-1">
                 ${amount}
