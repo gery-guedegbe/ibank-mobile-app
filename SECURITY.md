@@ -1,17 +1,19 @@
-# 🔒 Security Guide - Environment Variables
+# Guide de Securite - Variables d'Environnement
 
-## ⚠️ Important: Firebase Credentials Leak Fix
+## Informations Sensibles en Environnement
 
-Les clés Firebase sensibles ont été supprimées du code source et déplacées dans un fichier `.env.local` qui est **ignoré par Git**.
+Les clés Firebase ont été déplacées dans un fichier `.env.local` qui est ignoré par Git.
 
-### 📋 Ce qui a été fait
+## Ce Qui a Été Fait
 
-✅ Clés Firebase déplacées de `config/firebase.ts` vers `.env.local`
-✅ Validation des variables d'environnement au démarrage
-✅ Fichier `.env.example` créé pour la documentation
-✅ `.gitignore` mis à jour pour ignorer `*.env.local`
+- Clés Firebase déplacées vers `.env.local`
+- Vérification des variables d'environnement au démarrage
+- Fichier `.env.example` créé pour documenter les variables
+- `.gitignore` mis à jour pour ignorer `*.env.local`
 
-### 🔴 Actions Nécessaires IMMÉDIATEMENT
+## Actions Recommandees
+
+Si vous venez d'ajouter ce projet ou de pusher des credentials :
 
 1. **Révoquer les clés compromises sur Google Cloud :**
    - Allez à : https://console.cloud.google.com/
@@ -41,17 +43,17 @@ Les clés Firebase sensibles ont été supprimées du code source et déplacées
    # Remplissez les nouvelles clés Firebase
    ```
 
-### 📝 Utilisation
+## Utilisation
 
-#### Pour les développeurs
+### Pour les Développeurs
 
-1. Créer un fichier `.env.local` :
+1. Créez un fichier `.env.local` :
 
    ```bash
    cp .env.example .env.local
    ```
 
-2. Remplissez les valeurs avec vos clés Firebase (depuis [Firebase Console](https://console.firebase.google.com/)) :
+2. Remplissez les clés desde [Firebase Console](https://console.firebase.google.com/) :
    - `EXPO_PUBLIC_FIREBASE_API_KEY`
    - `EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN`
    - `EXPO_PUBLIC_FIREBASE_PROJECT_ID`
@@ -60,16 +62,16 @@ Les clés Firebase sensibles ont été supprimées du code source et déplacées
    - `EXPO_PUBLIC_FIREBASE_APP_ID`
    - `EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID`
 
-3. Lancez l'application normalement :
+3. Lancez l'application :
    ```bash
    npm start
    # ou
    expo start
    ```
 
-#### Pour les variables de build (CI/CD)
+### Pour les Variables de Build
 
-Dans votre pipeline, définissez les variables d'environnement avant le build :
+Dans votre pipeline CI/CD, définissez les variables d'environnement avant de compiler :
 
 **GitHub Actions:**
 
@@ -77,7 +79,6 @@ Dans votre pipeline, définissez les variables d'environnement avant le build :
 env:
   EXPO_PUBLIC_FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
   EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
-  # ... etc
 ```
 
 **EAS Build (Expo):**
@@ -86,35 +87,35 @@ env:
 eas build --local --env-file=.env.local
 ```
 
-### 🚫 JAMAIS
+## Ce qu'il ne Faut Pas Faire
 
-- ❌ Ne committez pas de fichiers `.env`
-- ❌ Ne mettez pas de secrets hardcodés dans le code
-- ❌ Ne poussez pas sur GitHub sans vérifier `.gitignore`
-- ❌ Ne commitez pas `node_modules` ou autres dossiers générés
+- Ne committez pas de fichiers `.env`
+- Ne mettez pas de secrets directement dans le code
+- Ne poussez pas sur GitHub sans vérifier `.gitignore`
+- Ne committez pas `node_modules` ou les dossiers générés
 
-### ✅ Bonnes pratiques
+## Bonnes Pratiques
 
-- ✅ Utilisez `.env.local` pour le développement local
-- ✅ Utilisez les secrets du CI/CD (GitHub Secrets, etc.) en production
-- ✅ Changez régulièrement vos clés API
-- ✅ Utilisez les restrictions de clés API dans Google Cloud
-- ✅ Vérifiez `.env.example` est à jour
-- ✅ Limitez les permissions Firebase par environnement
+- Utilisez `.env.local` pour le développement local
+- Utilisez les secrets du CI/CD (GitHub Secrets, etc.) en production
+- Changez régulièrement vos clés API
+- Limitez les permissions des clés dans Google Cloud
+- Vérifiez que `.env.example` est à jour
+- Limitez les permissions Firebase par environnement
 
-### 🔍 Vérification
+## Vérification
 
 Pour vérifier que les secrets ne sont plus dans le code :
 
 ```bash
-# Recherchez les clés exposées
+# Cherchez les clés exposées
 grep -r "AIzaSy\|firebaseapp\|160824508991" src/
 
-# Listez les fichiers trackés par git
+# Listez les fichiers suivis par git
 git ls-tree -r HEAD | grep -E "(\.env|firebase\.ts)"
 ```
 
-### 📚 Références
+## Ressources
 
 - [Expo Environment Variables](https://docs.expo.dev/workflow/configuration/)
 - [Firebase Security Best Practices](https://firebase.google.com/docs/projects/configure/settings)

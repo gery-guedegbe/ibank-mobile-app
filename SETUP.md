@@ -1,36 +1,39 @@
-# 🚀 Installation Guide - Setup Développement
+# Installation et Configuration
+
+Guide pour configurer le projet en développement
 
 ## Prérequis
 
-- Node.js 18+ et npm
-- Expo CLI : `npm install -g expo-cli`
-- Compte Firebase avec un projet créé
+- Node.js 18 ou plus
+- Expo CLI installée globalement
+- Un compte Firebase avec un projet créé
 
-## 1️⃣ Cloner et Installer
+## Étape 1 : Cloner et Installer
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/gery-guedegbe/ibank-mobile-app.git
 cd ibank-mobile-app
 npm install
 ```
 
-## 2️⃣ Configurer les Variables d'Environnement
+## Étape 2 : Configurer les Variables d'Environnement
 
-### a) Créer le fichier `.env.local`
+### Créer le fichier `.env.local`
 
 ```bash
 cp .env.example .env.local
 ```
 
-### b) Obtenir vos clés Firebase
+### Obtenir les clés Firebase
 
 1. Allez à [Firebase Console](https://console.firebase.google.com/)
-2. Sélectionnez votre projet `ibank-mobile-app`
-3. Cliquez sur ⚙️ **Project Settings**
-4. Onglet **Your apps** → Sélectionnez l'app web
-5. Copiez les infos de configuration
+2. Sélectionnez le projet `ibank-mobile-app`
+3. Cliquez sur Project Settings (roue dentée)
+4. Allez à l'onglet "Your apps"
+5. Sélectionnez l'app web
+6. Copiez les informations de configuration
 
-### c) Remplir `.env.local`
+### Remplir le fichier `.env.local`
 
 ```env
 EXPO_PUBLIC_FIREBASE_API_KEY=AIzaSy...
@@ -42,21 +45,21 @@ EXPO_PUBLIC_FIREBASE_APP_ID=1:123456789:web:abc...
 EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID=G-XXXXX
 ```
 
-⚠️ **Important:** N'oubliez pas que `.env.local` est dans `.gitignore` - ne commitez pas ce fichier !
+Important : Le fichier `.env.local` est ignoré par Git. Ne le committez jamais !
 
-## 3️⃣ Lancer l'Application
+## Étape 3 : Lancer l'Application
 
 ```bash
-# Mode développement avec hot reload
 npm start
-
-# Puis choisissez votre plateforme :
-# - iOS     : Appuyez sur i
-# - Android : Appuyez sur a
-# - Web     : Appuyez sur w
 ```
 
-## 📱 Tester sur Appareil
+Dans le terminal, appuyez sur :
+
+- `i` pour iOS
+- `a` pour Android
+- `w` pour Web
+
+## Tester sur Appareil
 
 ### Android Studio Emulator
 
@@ -70,61 +73,56 @@ npm run android
 npm run ios
 ```
 
-## 🧪 Vérification
+## Vérification
 
 Pour vérifier que tout fonctionne :
 
 ```bash
-# Linter
-npm run lint
-
-# Vérifier que Firebase est bien configuré
-npm start
-# Vous devriez voir l'écran de login sans erreurs d'environnement
+npm run lint           # Vérifier le code
+npm start              # Vérifier que Firebase est bien configuré
 ```
 
-## 🔐 Sécurité
+Vous devriez voir l'écran de login sans erreurs d'environnement.
 
-⚠️ **IMPORTANT:** Voir [SECURITY.md](./SECURITY.md) pour les meilleures pratiques sur les variables d'environnement.
+## Sécurité
 
-## 🐛 Troubleshooting
+Voir [SECURITY.md](./SECURITY.md) pour les bonnes pratiques sur les variables d'environnement.
+
+## Dépannage
 
 ### Erreur: "Missing required environment variables"
 
-**Cause:** `.env.local` est manquant ou incomplet
+Cause : Le fichier `.env.local` est manquant ou incomplet.
 
-**Solution:**
+Solution :
 
 ```bash
 cp .env.example .env.local
-# Remplissez toutes les valeurs Firebase
+# Puis remplissez les valeurs Firebase
 ```
 
 ### Erreur: "Firebase initialization failed"
 
-**Cause:** Les clés Firebase sont incorrectes
+Cause : Les clés Firebase sont incorrectes.
 
-**Solution:**
+Solution :
 
-1. Vérifiez que vous utilisez les bonnes clés dans `.env.local`
+1. Vérifiez les clés dans `.env.local`
 2. Vérifiez que le projet Firebase est actif
-3. Vérifiez que la plateforme web est ajoutée dans Firebase
+3. Vérifiez que l'app web est ajoutée dans Firebase
 
 ### Expo Go ou Emulator ne se connecte pas
 
-**Cause:** Problème de réseau ou port occupé
+Cause : Problème de réseau ou port occupé.
 
-**Solution:**
+Solution :
 
 ```bash
-# Réinitialiser le cache
-npm start --clear
-
-# Ou changer le port
-npm start -- --port 19000
+npm start --clear                 # Réinitialiser le cache
+npm start -- --port 19000        # Ou changer le port
 ```
 
-## 📚 Ressources
+## Ressources
 
 - [Expo Documentation](https://docs.expo.dev/)
 - [Firebase Setup](https://firebase.google.com/docs/web/setup)
