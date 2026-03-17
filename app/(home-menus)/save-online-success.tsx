@@ -13,7 +13,6 @@ const SaveOnlineSuccess = () => {
   const clearSaveData = useSaveStore((state) => state.clearSaveData);
 
   const handleFinish = () => {
-    clearSaveData();
     router.replace("/(tabs)/home");
   };
 

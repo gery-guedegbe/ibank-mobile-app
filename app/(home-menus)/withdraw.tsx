@@ -38,6 +38,8 @@ const WithdrawScreen = () => {
     router.push("/(home-menus)/success-withdraw");
   };
 
+  console.log("Eroors : ", errors);
+
   return (
     <SafeAreaView className="h-full flex-1 bg-white">
       <ScrollView className="flex-1">

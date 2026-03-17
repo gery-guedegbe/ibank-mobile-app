@@ -50,7 +50,7 @@ const TransfertScreen = () => {
       fromCardNumber: "",
       transactionType: "card",
       beneficiaryName: "",
-      beneficiaryCardNumber: "",
+      beneficiaryCardNumber: "5102567812345678",
       bankName: "",
       amount: "",
       content: "",

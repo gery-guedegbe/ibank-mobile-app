@@ -39,7 +39,7 @@ const SuccessWithdrawScreen = () => {
         </View>
 
         <View className="mt-12 w-full">
-          <AppButton title="Confirm" onPress={handleConfirm} />
+          <AppButton title="Back to Home" onPress={handleConfirm} />
         </View>
       </View>
     </SafeAreaView>

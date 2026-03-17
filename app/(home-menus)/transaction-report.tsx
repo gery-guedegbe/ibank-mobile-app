@@ -65,9 +65,9 @@ const TransactionReportScreen = () => {
 
   return (
     <SafeAreaView className="h-full flex-1 bg-white">
-      <View className="absolute inset-0 bg-primary-1" />
+      <View className="flex-1">
+        <View className="absolute inset-0 bg-primary-1" />
 
-      <View className="flex-1 ">
         <View className="flex flex-row items-center gap-3 px-6 py-8">
           <Pressable hitSlop={16} onPress={() => router.back()}>
             <Image

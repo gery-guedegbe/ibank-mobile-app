@@ -6,6 +6,7 @@ import arrow_left from "@assets/icons/arrow-left.png";
 import bank_icon from "@assets/icons/bank-icon.png";
 import bell_icon from "@assets/icons/bell-icon.png";
 import beneficiary_icon from "@assets/icons/beneficiary-icon.png";
+import camera_icon from "@assets/icons/camera-icon.png";
 import check_blue_icon from "@assets/icons/check-blue-icon.png";
 import close_icon from "@assets/icons/close-icon.png";
 import credit_card_icon from "@assets/icons/credit-card-icon.png";
@@ -34,6 +35,7 @@ import salary_icon from "@assets/icons/salary-icon.png";
 import save_online_icon from "@assets/icons/save-online-icon.png";
 import search_icon from "@assets/icons/search-icon.png";
 import setting_icon from "@assets/icons/setting-icon.png";
+import television_icon from "@assets/icons/television-icon.png";
 import transaction_card_icon from "@assets/icons/transaction-card-icon.png";
 import transfert_icon from "@assets/icons/transfer-icon.png";
 import user_icon from "@assets/icons/user-icon.png";
@@ -42,6 +44,9 @@ import withdraw_icon from "@assets/icons/withdraw-icon.png";
 import withdraw_white_icon from "@assets/icons/withdraw-white-icon.png";
 import sign_in_image from "@assets/images/auth/sign-in-image.png";
 import sign_up_image from "@assets/images/auth/sign-up-image.png";
+import avatar_1 from "@assets/images/avatar-1.png";
+import avatar_2 from "@assets/images/avatar-2.png";
+import avatar_3 from "@assets/images/avatar-3.png";
 import master_card_bg from "@assets/images/card/master-card-bg.png";
 import master_card_logo from "@assets/images/card/master_card_logo.png";
 import visa_card_bg from "@assets/images/card/visa-card-bg.png";
@@ -182,4 +187,9 @@ export const images = {
   save_online_add_image,
   save_online_management_image,
   save_online_image,
+  avatar_1,
+  avatar_2,
+  avatar_3,
+  camera_icon,
+  television_icon,
 };

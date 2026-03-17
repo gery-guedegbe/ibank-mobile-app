@@ -95,7 +95,7 @@ const TransferFormFields = ({
       <View>
         <Controller
           control={control}
-          name="fromCardNumber"
+          name="beneficiaryCardNumber"
           render={({ field: { onChange, value } }) => (
             <AppInput
               placeholder="Card number"

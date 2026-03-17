@@ -415,3 +415,46 @@ export const SAVINGS_DATA = [
     rate: "5%",
   },
 ];
+
+export const CREDIT_CARD_ITEMS = [
+  {
+    id: "1",
+    icon: images.camera_icon,
+    icon_bg: "#3629B7",
+    title: "Buy Camera",
+    desc: "Unsuccessfully",
+    amount: "- $1200",
+    type: "expense",
+    date: "02/11/2018",
+  },
+  {
+    id: "2",
+    icon: images.television_icon,
+    icon_bg: "#FF4267",
+    title: "Buy Television",
+    desc: "Unsuccessfully",
+    amount: "- $1200",
+    type: "expense",
+    date: "Yesterday",
+  },
+  {
+    id: "3",
+    icon: images.camera_icon,
+    icon_bg: "#0890FE",
+    title: "Buy Camera",
+    desc: "Unsuccessfully",
+    amount: "- $1200",
+    type: "expense",
+    date: "02/11/2018",
+  },
+  {
+    id: "4",
+    icon: images.television_icon,
+    icon_bg: "#FFAF2A",
+    title: "Buy Television",
+    desc: "Unsuccessfully",
+    amount: "- $1200",
+    type: "expense",
+    date: "02/11/2018",
+  },
+];
